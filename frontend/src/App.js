@@ -1,30 +1,32 @@
-import {Routes, Route, useNavigate} from 'react-router-dom';
+import { useState } from 'react';
 import Capture from './capture/capture';
 import View from './view/view';
 
 export default function App() {
-  const navigate = useNavigate();
+  const [display, setDisplay] = useState("default");
 
-  const navigateToCapture = () => {
-    navigate('/capture');
-  };
-
-  const navigateToView = () => {
-    navigate('/view');
-  };
+  const render = () => {
+    if (display === "default") {
+      return (
+        <div>
+          <div>
+            <button onClick={() => setDisplay("capture")}>Take photos</button>
+            <button onClick={() => setDisplay("view")}>View photos</button>
+          </div>
+        </div>
+      )
+    } else if (display === "capture") {
+      return (
+        <Capture />
+      )
+    } else if (display === "view") {
+      return (
+        <View />
+      )
+    }
+  }
 
   return (
-    <div>
-      <div>
-        <button onClick={navigateToCapture}>Take photos</button>
-        <hr />
-        <button onClick={navigateToView}>View photos</button>
-
-        <Routes>
-          <Route path="/capture" element={<Capture />} />
-          <Route path="/view" element={<View />} />
-        </Routes>
-      </div>
-    </div>
+    render()
   );
 }
