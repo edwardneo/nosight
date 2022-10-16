@@ -14,6 +14,10 @@
     right: 0px;
 }
 
+.close:hover {
+    cursor: pointer;
+}
+
 .img {
     width: 40%;
 }
