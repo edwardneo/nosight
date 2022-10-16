@@ -1,32 +1,32 @@
-import { useState } from 'react';
-import Capture from './capture/capture';
-import View from './view/view';
+import { useState } from "react";
+import {
+  Flex,
+  Heading,
+  Input,
+  Button,
+  InputGroup,
+  Stack,
+  InputLeftElement,
+  chakra,
+  Box,
+  Link,
+  Avatar,
+  FormControl,
+  FormHelperText,
+  InputRightElement
+} from "@chakra-ui/react";
+import { FaUpload, FaCameraRetro } from "react-icons/fa";
+import Main from './components/Main';
+
+const CFaUpload = chakra(FaUpload);
+const CFaCameraRetro = chakra(FaCameraRetro);
 
 export default function App() {
-  const [display, setDisplay] = useState("default");
-
-  const render = () => {
-    if (display === "default") {
-      return (
-        <div>
-          <div>
-            <button onClick={() => setDisplay("capture")}>Take photos</button>
-            <button onClick={() => setDisplay("view")}>View photos</button>
-          </div>
-        </div>
-      )
-    } else if (display === "capture") {
-      return (
-        <Capture />
-      )
-    } else if (display === "view") {
-      return (
-        <View />
-      )
-    }
-  }
+  const [token, setToken] = useState(null);
 
   return (
-    render()
+    <div>
+      <Main setToken={setToken} token={token} />
+    </div>
   );
 }
