@@ -53,7 +53,7 @@ export default function Homepage( { setToken }) {
             <Link to="view">
               <Button
                 borderRadius={5}
-                flex={1}
+                flex={2}
                 variant="solid"
                 colorScheme="teal"
                 onClick= {() => {setToken("view")}}

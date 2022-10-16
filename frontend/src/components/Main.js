@@ -9,8 +9,8 @@ export default function Main({ token, setToken }) {
         <Router>
             <Routes>
             <Route path='/' element={<Homepage setToken={setToken} />} exact></Route>
-            <Route path='/capture' element={token !== 'capture' ? <Navigate to="/" /> : <Capture />}></Route>
-            <Route path='/view' element={token !== 'view' ? <Navigate to="/" /> : <View />}></Route>
+            <Route path='/capture' element={<Capture />}></Route>
+            <Route path='/view' element={<View />}></Route>
             </Routes>
         </Router>
       );

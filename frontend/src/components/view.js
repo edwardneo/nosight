@@ -1,7 +1,14 @@
 import './view.css';
+import {
+  Flex,
+  Button,
+  Stack,
+  chakra,
+  Box,
+} from "@chakra-ui/react";
 import { useState, useEffect } from 'react';
 
-function View() {
+export default function View() {
   const [ imageArr, setImageArr ] = useState([]);
 
   const getImages = () => {
@@ -36,10 +43,34 @@ function View() {
   }, []);
 
   return (
-    <div className="view">
-      {imageArr}
-    </div>
+    <Flex
+    flexDirection="row"
+    backgroundColor="#202C39"
+    justifyContent="center"
+    alignItems="center"
+  >
+    <Stack
+      flexDir="row"
+      mb="2"
+      justifyContent="center"
+      alignItems="center"
+    >
+      <Box minW={{ base: "90%", md: "468px" }}>
+        <Stack
+          spacing={10}
+          
+          p="1rem"
+          flexDir="column"
+          backgroundColor="#F2D492"
+          boxShadow="md"
+          borderRadius={5}
+          alignItems="center"
+          justifyContent="center"
+        >
+          {imageArr}
+        </Stack>
+      </Box>
+    </Stack>
+  </Flex>
   );
 }
-
-export default View;

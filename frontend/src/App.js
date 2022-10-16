@@ -25,7 +25,7 @@ export default function App() {
   const [token, setToken] = useState(null);
 
   return (
-    <div>
+    <div style={{ overflow: "auto" }}>
       <Main setToken={setToken} token={token} />
     </div>
   );
