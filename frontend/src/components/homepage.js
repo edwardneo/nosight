@@ -23,46 +23,34 @@ export default function Homepage( { setToken }) {
       alignItems="center"
     >
       <Stack
-        flexDir="row"
+        flexDir="column"
         mb="2"
         justifyContent="center"
         alignItems="center"
       >
-        <Box minW={{ base: "90%", md: "468px" }}>
-          <form>
-            <Stack
-              spacing={4}
-              p="1rem"
-              flexDir="row"
-              backgroundColor="#F2D492"
-              boxShadow="md"
-              borderRadius={5}
-              alignItems="center"
-              justifyContent="center"
-            >
-            <Link to="capture">
-              <Button
-                borderRadius={5}
-                flex={1}
-                variant="solid"
-                colorScheme="teal"
-                onClick= {() => {setToken("capture")}}
-                children={<CFaCameraRetro color="white"/>}
-              /> 
-            </Link>
-            <Link to="view">
-              <Button
-                borderRadius={5}
-                flex={2}
-                variant="solid"
-                colorScheme="teal"
-                onClick= {() => {setToken("view")}}
-                children={<CFaUpload color="white"/>}
-              />
-            </Link>
-            </Stack>
-          </form>
-        </Box>
+        <form>
+        <Link to="capture">
+            <Button
+            borderRadius={5}
+            flex={1}
+            variant="solid"
+            colorScheme="teal"
+            onClick= {() => {setToken("capture")}}
+            children={<CFaCameraRetro color="white" /> }
+            /> 
+        </Link>
+        <Stack padding={3}></Stack>
+        <Link to="view">
+            <Button
+            borderRadius={5}
+            flex={2}
+            variant="solid"
+            colorScheme="teal"
+            onClick= {() => {setToken("view")}}
+            children={<CFaUpload color="white"/>}
+            />
+        </Link>
+        </form>
       </Stack>
     </Flex>
   );

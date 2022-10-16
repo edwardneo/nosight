@@ -17,20 +17,22 @@ export default function View() {
     .then(res => {
       const images = [];
       res.images.forEach((image, i) => {
-          images.push((
-            <div className="content" key={i}>
-              <h1 className="close">X</h1>
-              <img className="img" src={image.data.uri} alt="Filler" />
-            </div>
-          ));
           
           if (image.data.uri2 !== undefined) {
             images.push((
-              <div className="content" key={i}>
+              <div className="content" flexDir="row">
                 <h1 className="close">X</h1>
+                <img className="img" src={image.data.uri} alt="Filler" />
                 <img className="img" src={image.data.uri2} alt="Filler" />
               </div>
             ))
+          } else {
+            images.push((
+              <Stack flexDir="column" className="content" key={i}>
+                <h1 className="close">X</h1>
+                <img className="img" src={image.data.uri} alt="Filler" />
+              </Stack>
+            ));
           }
         }
       );
@@ -45,31 +47,17 @@ export default function View() {
   return (
     <Flex
     flexDirection="row"
-    backgroundColor="#202C39"
+    backgroundColor="#F2D492"
     justifyContent="center"
     alignItems="center"
   >
     <Stack
-      flexDir="row"
+      flexDir="column"
       mb="2"
       justifyContent="center"
       alignItems="center"
     >
-      <Box minW={{ base: "90%", md: "468px" }}>
-        <Stack
-          spacing={10}
-          
-          p="1rem"
-          flexDir="column"
-          backgroundColor="#F2D492"
-          boxShadow="md"
-          borderRadius={5}
-          alignItems="center"
-          justifyContent="center"
-        >
-          {imageArr}
-        </Stack>
-      </Box>
+      {imageArr}
     </Stack>
   </Flex>
   );

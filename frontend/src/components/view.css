@@ -1,6 +1,11 @@
 .content {
     position: relative;
-    width: 50%;
+    width: fit-content;
+    block-size: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .close {
@@ -10,5 +15,5 @@
 }
 
 .img {
-    width: 150%;
+    width: 40%;
 }
