@@ -1,0 +1,9 @@
+.content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}

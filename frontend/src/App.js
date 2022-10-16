@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route, useNavigate} from 'react-router-dom';
+import Capture from './capture/capture';
+import View from './view/view';
 
-function App() {
+export default function App() {
+  const navigate = useNavigate();
+
+  const navigateToCapture = () => {
+    navigate('/capture');
+  };
+
+  const navigateToView = () => {
+    navigate('/view');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        <button onClick={navigateToCapture}>Take photos</button>
+        <hr />
+        <button onClick={navigateToView}>View photos</button>
+
+        <Routes>
+          <Route path="/capture" element={<Capture />} />
+          <Route path="/view" element={<View />} />
+        </Routes>
+      </div>
     </div>
   );
 }
-
-export default App;

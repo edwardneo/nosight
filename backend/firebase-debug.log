@@ -1,0 +1,413 @@
+[debug] [2022-10-16T13:22:53.725Z] ----------------------------------------------------------------------
+[debug] [2022-10-16T13:22:53.726Z] Command:       /usr/local/bin/node /Users/edwardneo/.npm-global/bin/firebase emulators:start
+[debug] [2022-10-16T13:22:53.726Z] CLI Version:   11.14.4
+[debug] [2022-10-16T13:22:53.727Z] Platform:      darwin
+[debug] [2022-10-16T13:22:53.727Z] Node Version:  v16.13.1
+[debug] [2022-10-16T13:22:53.727Z] Time:          Sun Oct 16 2022 06:22:53 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-10-16T13:22:53.727Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-16T13:22:53.766Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-16T13:22:53.766Z] > authorizing via signed-in user (edwardneo@gmail.com)
+[debug] [2022-10-16T13:22:53.833Z] openjdk version "18" 2022-03-22
+
+[debug] [2022-10-16T13:22:53.834Z] OpenJDK Runtime Environment (build 18+36-2087)
+OpenJDK 64-Bit Server VM (build 18+36-2087, mixed mode, sharing)
+
+[debug] [2022-10-16T13:22:53.838Z] Parsed Java major version: 18
+[info] i  emulators: Starting emulators: functions, firestore, database, storage {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, firestore, database, storage"}}
+[debug] [2022-10-16T13:22:54.350Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-16T13:22:54.350Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-16T13:22:54.350Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-16T13:22:54.351Z] [database] Database Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-16T13:22:54.351Z] [storage] Storage Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-16T13:22:54.351Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-10-16T13:22:54.356Z] [hub] writing locator at /var/folders/kr/gys_1v7s061g0jqsn1bs_71r0000gn/T/hub-nosight-c105e.json
+[debug] [2022-10-16T13:22:54.507Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-16T13:22:54.508Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-10-16T13:22:54.508Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}],"database":[{"address":"127.0.0.1","family":"IPv4","port":9000}],"storage":[{"address":"127.0.0.1","family":"IPv4","port":9199}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, hosting, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, hosting, pubsub\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-10-16T13:22:54.514Z] defaultcredentials: writing to file /Users/edwardneo/.config/firebase/edwardneo_gmail_com_application_default_credentials.json
+[debug] [2022-10-16T13:22:54.516Z] Setting GAC to /Users/edwardneo/.config/firebase/edwardneo_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/edwardneo/.config/firebase/edwardneo_gmail_com_application_default_credentials.json"}}
+[debug] [2022-10-16T13:22:54.517Z] > refreshing access token with scopes: []
+[debug] [2022-10-16T13:22:54.517Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-16T13:22:54.517Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-16T13:22:57.926Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2022-10-16T13:22:57.926Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-16T13:22:57.990Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nosight-c105e/adminSdkConfig [none]
+[debug] [2022-10-16T13:23:05.806Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nosight-c105e/adminSdkConfig 200
+[debug] [2022-10-16T13:23:05.807Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nosight-c105e/adminSdkConfig {"projectId":"nosight-c105e","storageBucket":"nosight-c105e.appspot.com","locationId":"us-central"}
+[debug] [2022-10-16T13:23:05.853Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-16T13:23:05.854Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2022-10-16T13:23:05.854Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/edwardneo/.cache/firebase/emulators/cloud-firestore-emulator-v1.15.1.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","nosight-c105e","--rules","/Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/firestore.rules","--single_project_mode",true,"--functions_emulator","127.0.0.1:5001"],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/edwardneo/.cache/firebase/emulators/cloud-firestore-emulator-v1.15.1.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"nosight-c105e\",\"--rules\",\"/Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/firestore.rules\",\"--single_project_mode\",true,\"--functions_emulator\",\"127.0.0.1:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-10-16T13:23:06.969Z] Oct 16, 2022 6:23:06 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 16, 2022 6:23:06 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2022-10-16T13:23:06.995Z] API endpoint: http:// {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://"}}
+[debug] [2022-10-16T13:23:06.995Z] 127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2022-10-16T13:23:07.132Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/nosight-c105e [none]
+[debug] [2022-10-16T13:23:07.651Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/nosight-c105e 200
+[debug] [2022-10-16T13:23:07.652Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/nosight-c105e {"projectId":"nosight-c105e","projectNumber":"625040371207","displayName":"nosight","name":"projects/nosight-c105e","resources":{"hostingSite":"nosight-c105e","storageBucket":"nosight-c105e.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_c2ba0ae9-7889-493b-b005-8fbb44649c69"}
+[debug] [2022-10-16T13:23:07.652Z] database rules config:  []
+[warn] ⚠  database: Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"database"},"message":"Did not find a Realtime Database rules file specified in a firebase.json config file. The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2022-10-16T13:23:07.658Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-10-16T13:23:07.658Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-16T13:23:07.658Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-10-16T13:23:07.658Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/Users/edwardneo/.cache/firebase/emulators/firebase-database-emulator-v4.10.0.jar","--host","127.0.0.1","--port",9000,"--single_project_mode","Warning","--functions_emulator_host","127.0.0.1","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/Users/edwardneo/.cache/firebase/emulators/firebase-database-emulator-v4.10.0.jar\",\"--host\",\"127.0.0.1\",\"--port\",9000,\"--single_project_mode\",\"Warning\",\"--functions_emulator_host\",\"127.0.0.1\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
+[debug] [2022-10-16T13:23:08.939Z] 06:23:08.938 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"06:23:08.938 [NamespaceSystem-akka.actor.default-dispatcher-4] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2022-10-16T13:23:09.193Z] 06:23:09.193 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"06:23:09.193 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000\n"}}
+[debug] [2022-10-16T13:23:09.438Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"storage"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-16T13:23:10.458Z] Temp file directory for storage emulator: /var/folders/kr/gys_1v7s061g0jqsn1bs_71r0000gn/T/firebase/storage/blobs {"metadata":{"emulator":{"name":"storage"},"message":"Temp file directory for storage emulator: /var/folders/kr/gys_1v7s061g0jqsn1bs_71r0000gn/T/firebase/storage/blobs"}}
+[debug] [2022-10-16T13:23:10.463Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-16T13:23:10.463Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-16T13:23:10.463Z] Starting Emulator UI with command {"binary":"node","args":["/Users/edwardneo/.cache/firebase/emulators/ui-v1.11.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/edwardneo/.cache/firebase/emulators/ui-v1.11.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-10-16T13:23:10.524Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2022-10-16T13:23:10.524Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions\" for Cloud Functions..."}}
+[debug] [2022-10-16T13:23:10.728Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-16T13:23:11.279Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true,
+  "type": "module"
+}
+[debug] [2022-10-16T13:23:11.279Z] Building nodejs source
+[debug] [2022-10-16T13:23:11.279Z] Analyzing nodejs backend spec
+[debug] [2022-10-16T13:23:11.280Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-16T13:23:11.350Z] Serving at port 9005
+
+[debug] [2022-10-16T13:23:11.366Z] Got response from /__/functions.yaml Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/node_modules/firebase-admin/app' imported from /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/index.js
+[debug] [2022-10-16T13:23:11.368Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 79:
+     ... ce: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/edw ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/node_modules/firebase-admin/app' imported from /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/index.js\n\u0000","position":78,"line":0,"column":78},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 79:\n     ... ce: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/edw ... \n                                         ^"}
+[debug] [2022-10-16T13:23:11.372Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/node_modules/firebase-admin/app' imported from /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/index.js {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/node_modules/firebase-admin/app' imported from /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/index.js"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Firestore │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Database  │ 127.0.0.1:9000 │ http://127.0.0.1:4000/database  │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Storage   │ 127.0.0.1:9199 │ http://127.0.0.1:4000/storage   │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-10-16T13:23:31.961Z] Oct 16, 2022 6:23:31 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Oct 16, 2022 6:23:31 AM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2022-10-16T13:24:10.456Z] File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-16T13:24:11.458Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-16T13:24:11.978Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true,
+  "type": "module"
+}
+[debug] [2022-10-16T13:24:11.978Z] Building nodejs source
+[debug] [2022-10-16T13:24:11.978Z] Analyzing nodejs backend spec
+[debug] [2022-10-16T13:24:11.978Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-16T13:24:12.044Z] Serving at port 9005
+
+[debug] [2022-10-16T13:24:12.108Z] Got response from /__/functions.yaml Failed to generate manifest from function source: TypeError: admin.initializeApp is not a function
+[debug] [2022-10-16T13:24:12.109Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 60:
+     ...  from function source: TypeError: admin.initializeApp is not a f ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: TypeError: admin.initializeApp is not a function\n\u0000","position":59,"line":0,"column":59},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 60:\n     ...  from function source: TypeError: admin.initializeApp is not a f ... \n                                         ^"}
+[debug] [2022-10-16T13:24:12.111Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: TypeError: admin.initializeApp is not a function {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: TypeError: admin.initializeApp is not a function"}}
+[debug] [2022-10-16T13:25:08.867Z] File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/config.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/config.js changed, reloading triggers"}}
+[debug] [2022-10-16T13:25:09.869Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-16T13:25:11.589Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true,
+  "type": "module"
+}
+[debug] [2022-10-16T13:25:11.589Z] Building nodejs source
+[debug] [2022-10-16T13:25:11.589Z] Analyzing nodejs backend spec
+[debug] [2022-10-16T13:25:11.590Z] File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/config.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/config.js changed, reloading triggers"}}
+[debug] [2022-10-16T13:25:11.590Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-16T13:25:11.657Z] Serving at port 9005
+
+[debug] [2022-10-16T13:25:11.714Z] Got response from /__/functions.yaml Failed to generate manifest from function source: TypeError: admin.firestore is not a function
+[debug] [2022-10-16T13:25:11.714Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 60:
+     ...  from function source: TypeError: admin.firestore is not a function
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: TypeError: admin.firestore is not a function\n\u0000","position":59,"line":0,"column":59},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 60:\n     ...  from function source: TypeError: admin.firestore is not a function\n                                         ^"}
+[debug] [2022-10-16T13:25:11.717Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: TypeError: admin.firestore is not a function {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: TypeError: admin.firestore is not a function"}}
+[debug] [2022-10-16T13:25:12.592Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-16T13:25:13.155Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true,
+  "type": "module"
+}
+[debug] [2022-10-16T13:25:13.155Z] Building nodejs source
+[debug] [2022-10-16T13:25:13.155Z] Analyzing nodejs backend spec
+[debug] [2022-10-16T13:25:13.156Z] File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/config.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/config.js changed, reloading triggers"}}
+[debug] [2022-10-16T13:25:13.156Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-16T13:25:13.223Z] Serving at port 9005
+
+[debug] [2022-10-16T13:25:13.240Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Export 'db' is not defined in module
+[debug] [2022-10-16T13:25:13.240Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Export 'db' is not defined in  ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Export 'db' is not defined in module\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Export 'db' is not defined in  ... \n                                         ^"}
+[debug] [2022-10-16T13:25:13.245Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Export 'db' is not defined in module {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Export 'db' is not defined in module"}}
+[debug] [2022-10-16T13:25:14.160Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-16T13:25:14.795Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true,
+  "type": "module"
+}
+[debug] [2022-10-16T13:25:14.795Z] Building nodejs source
+[debug] [2022-10-16T13:25:14.795Z] Analyzing nodejs backend spec
+[debug] [2022-10-16T13:25:14.795Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-16T13:25:14.867Z] Serving at port 9005
+
+[debug] [2022-10-16T13:25:14.887Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Export 'db' is not defined in module
+[debug] [2022-10-16T13:25:14.887Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Export 'db' is not defined in  ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Export 'db' is not defined in module\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Export 'db' is not defined in  ... \n                                         ^"}
+[debug] [2022-10-16T13:25:14.894Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Export 'db' is not defined in module {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Export 'db' is not defined in module"}}
+[debug] [2022-10-16T13:25:16.283Z] File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/config.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/config.js changed, reloading triggers"}}
+[debug] [2022-10-16T13:25:17.288Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-16T13:25:17.894Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true,
+  "type": "module"
+}
+[debug] [2022-10-16T13:25:17.894Z] Building nodejs source
+[debug] [2022-10-16T13:25:17.894Z] Analyzing nodejs backend spec
+[debug] [2022-10-16T13:25:17.894Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-16T13:25:17.961Z] Serving at port 9005
+
+[debug] [2022-10-16T13:25:17.989Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: The requested module './config.js' does not provide an export named 'db'
+[debug] [2022-10-16T13:25:17.989Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: The requested module './config ... 
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: The requested module './config.js' does not provide an export named 'db'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: The requested module './config ... \n                                         ^"}
+[debug] [2022-10-16T13:25:17.991Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: The requested module './config.js' does not provide an export named 'db' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: The requested module './config.js' does not provide an export named 'db'"}}
+[debug] [2022-10-16T13:25:30.009Z] File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/edwardneo/Documents/Coding/nosight/nosight-web/backend/functions/index.js changed, reloading triggers"}}
+[debug] [2022-10-16T13:25:31.012Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2022-10-16T13:25:34.818Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true,
+  "type": "module"
+}
+[debug] [2022-10-16T13:25:34.818Z] Building nodejs source
+[debug] [2022-10-16T13:25:34.818Z] Analyzing nodejs backend spec
+[debug] [2022-10-16T13:25:34.818Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-16T13:25:34.891Z] Serving at port 9005
+
+[debug] [2022-10-16T13:25:34.948Z] Got response from /__/functions.yaml Failed to generate manifest from function source: TypeError: express is not a function
+[debug] [2022-10-16T13:25:34.948Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 60:
+     ...  from function source: TypeError: express is not a function
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: TypeError: express is not a function\n\u0000","position":59,"line":0,"column":59},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 60:\n     ...  from function source: TypeError: express is not a function\n                                         ^"}
+[debug] [2022-10-16T13:25:34.950Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: TypeError: express is not a function {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: TypeError: express is not a function"}}
+[debug] [2022-10-16T13:26:42.543Z] Received signal SIGINT (Ctrl-C) 1
+[info]  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[warn] ⚠  Emulator UI has exited upon receiving signal: SIGINT 
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  database: Stopping Database Emulator {"metadata":{"emulator":{"name":"database"},"message":"Stopping Database Emulator"}}
+[debug] [2022-10-16T13:26:42.562Z] 06:26:42.562 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.
+ {"metadata":{"emulator":{"name":"database"},"message":"06:26:42.562 [Thread-0] INFO com.firebase.server.forge.App$ - Attempting graceful shutdown.\n"}}
+[debug] [2022-10-16T13:26:42.580Z] 06:26:42.580 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.
+ {"metadata":{"emulator":{"name":"database"},"message":"06:26:42.580 [Thread-0] INFO com.firebase.server.forge.App$ - Graceful shutdown complete.\n"}}
+[info] i  firestore: Stopping Firestore Emulator {"metadata":{"emulator":{"name":"firestore"},"message":"Stopping Firestore Emulator"}}
+[debug] [2022-10-16T13:26:42.973Z] *** shutting down gRPC server since JVM is shutting down
+ {"metadata":{"emulator":{"name":"firestore"},"message":"*** shutting down gRPC server since JVM is shutting down\n"}}
+[debug] [2022-10-16T13:26:42.984Z] *** server shut down
+ {"metadata":{"emulator":{"name":"firestore"},"message":"*** server shut down\n"}}
+[info] i  storage: Stopping Storage Emulator {"metadata":{"emulator":{"name":"storage"},"message":"Stopping Storage Emulator"}}
+[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2022-10-16T13:26:50.909Z] Error: Timed out.
+    at Timeout.<anonymous> (/Users/edwardneo/.npm-global/lib/node_modules/firebase-tools/lib/utils.js:253:49)
+    at listOnTimeout (node:internal/timers:557:17)
+    at processTimers (node:internal/timers:500:7)
+[error] 
+[error] Error: An unexpected error has occurred.
